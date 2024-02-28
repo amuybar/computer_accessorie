@@ -1,0 +1,89 @@
+.payment-container {
+  max-width: 800px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0c0c0c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.product-details-left {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.product-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.selection-section {
+  margin: 20px;
+}
+
+.selection-section input,
+.selection-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 0.1px solid #000000;
+  border-radius: 5px;
+}
+
+.input-container {
+  margin-top: 10px;
+}
+
+.payment-details-input {
+  width: 100%;
+  padding: 8px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap; /* Added to wrap to next line on smaller screens */
+  gap: 10px;
+}
+
+.payment-method-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-method-box.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.payment-method button {
+  margin: 20px;
+  padding: 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.payment-method button:hover {
+  background-color: #45a049;
+}

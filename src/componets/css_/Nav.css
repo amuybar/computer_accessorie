@@ -1,0 +1,89 @@
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #101010;
+  height: 40px;
+}
+
+.logo {
+  font-size: 1.6em;
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-buttons {
+  display: flex;
+}
+
+.nav-button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  font-size: 1.6em;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.nav-button:hover {
+  text-decoration: underline;
+  border: none;
+  font-size: 1.8em;
+  color: rgb(165, 241, 238);
+  cursor: pointer;
+  margin-left: 12px;
+}
+.menu-icon {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.active-menu .logo a,
+.active-menu .menu {
+  background-color: #46f37f;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px; 
+  right: 20px;
+  padding: auto;
+  background-color: #070707;
+  border: 0.1px solid #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction:column;
+  padding: 10px;
+  z-index: 100; 
+}
+
+.dropdown-menu .nav-button {
+  background: none;
+  border: none;
+  font-size: 1.6em;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+}
+.active-menu .menu-icon {
+  color: #ffcc00;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-buttons {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
